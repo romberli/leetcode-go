@@ -51,10 +51,6 @@ func longestPalindrome(s string) string {
 	}
 
 	for i, _ := range s {
-		// if (length - i) * 2 - 1 <= len(result) {
-		//     return result
-		// }
-		//
 		str, right := findLongestPalindromicWithIndex(s, length, i)
 
 		if len(str) > len(result) {
