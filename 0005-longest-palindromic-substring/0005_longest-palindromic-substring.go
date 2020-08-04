@@ -19,17 +19,6 @@ func findLongestPalindromicWithIndex(s string, length int, index int) (string, i
 		return s[:right+1], right
 	}
 
-	leftLen := left - leftEdge
-	rightLen := rightEdge - right
-
-	if leftLen > rightLen {
-		leftEdge = left - rightLen
-	}
-
-	if rightLen > leftEdge {
-		rightEdge = right + leftLen
-	}
-
 	for {
 		if left < leftEdge || right > rightEdge || s[left] != s[right] {
 			return s[left+1 : right], right - 1
