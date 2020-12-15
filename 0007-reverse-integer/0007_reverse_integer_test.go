@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestLongestPalindrome(t *testing.T) {
+func TestReverse(t *testing.T) {
 	var (
 		x, expect, result int
 	)

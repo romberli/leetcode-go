@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestLongestPalindrome(t *testing.T) {
+func TestConvert(t *testing.T) {
 	var (
 		s, expect, result string
 		rows              int
